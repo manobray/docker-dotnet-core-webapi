@@ -2,8 +2,9 @@
 Simple WebApi self contained in a Docker container.
 
 ## How to build it:
+1 - Open PowerShell or CMD and navigate to the TestDocker folder.
 
-Simply run both commmands:
+2 - Run both commmands:
 
 docker build -t {your-tag} .
 
