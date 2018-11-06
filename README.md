@@ -1,4 +1,4 @@
-# docker-dotnet-core-webapi
+# .Net Core Web Api with Docker
 Simple WebApi self contained in a Docker container.
 
 #h2 How to build it:
