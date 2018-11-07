@@ -11,5 +11,7 @@ Simple WebApi self contained in a Docker container.
 ```docker run -d -p 8080:80 --name myapp {your-tag}```
 
 ## How to test it:
-Open your browser at:
-http://localhost:8080/api/hello
+Running on http://localhost:8080/api/hello 
+or http://192.168.99.100:8080/api/hello if using Docker Toolbox
+
+It must return `Hello from .NET Core`.
