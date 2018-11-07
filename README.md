@@ -2,9 +2,8 @@
 Simple WebApi self contained in a Docker container.
 
 ## How to build it:
-1 - Open PowerShell or CMD and navigate to the TestDocker folder.
-
-2 - Run both commmands:
+1. Navigate to the `\TestDocker` folder.
+2. Run both commmands:
 
 ```docker build -t {your-tag} .```
 
@@ -18,3 +17,10 @@ Running on http://localhost:8080/api/hello
 It must return `Hello from .NET Core`.
 
 ## How to test it:
+1. Install [enqueuer](https://github.com/lopidio/enqueuer)
+2. Navigate to `\test` folder
+3. Run
+
+```nqr enqueuerConfig.yml```
+
+
