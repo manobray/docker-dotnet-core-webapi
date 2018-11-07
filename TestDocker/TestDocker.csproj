@@ -13,4 +13,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TestDocker.Business\TestDocker.Business.csproj" />
+    <ProjectReference Include="..\TestDocker.Models\TestDocker.Models.csproj" />
+  </ItemGroup>
+
 </Project>

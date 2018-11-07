@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using TestDocker.Models;
 
 namespace TestDocker
 {
@@ -25,6 +26,7 @@ namespace TestDocker
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.Configure<DbStrings>(Configuration.GetSection("ConnectionStrings"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +38,8 @@ namespace TestDocker
             }
 
             app.UseMvc();
+
+            AppModel.DataBaseStrings = Configuration.GetSection("ConnectionStrings").Get<DbStrings>();
         }
     }
 }
