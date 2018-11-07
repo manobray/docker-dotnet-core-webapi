@@ -10,8 +10,11 @@ Simple WebApi self contained in a Docker container.
 
 ```docker run -d -p 8080:80 --name myapp {your-tag}```
 
-## How to test it:
+## How to check it:
 Running on http://localhost:8080/api/hello 
-or http://192.168.99.100:8080/api/hello if using Docker Toolbox
+
+(or http://192.168.99.100:8080/api/hello if you're using Docker Toolbox)
 
 It must return `Hello from .NET Core`.
+
+## How to test it:
